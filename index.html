@@ -1,2 +1,35 @@
-"Hello World" 
-q
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+
+<title>生成md5密码</title>
+<script src="http://libs.baidu.com/jquery/2.1.4/jquery.min.js"></script>
+<script type="text/javascript" src="http://www.gongjuji.net/Content/files/jquery.md5.js"></script>
+
+<script type="text/javascript">
+    function auto(){
+        var pwd =document.getElementById("pwd").value;
+        var digest = $.md5(pwd);
+        
+        alert(digest);
+    }
+    
+</script>
+</head>
+  
+<body style="background-color:black">
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<center>
+<h1 style="color:white">JS生成md5密码</h1>
+<form>
+<input type="text" id ="pwd"/>
+<input type="button" onclick="auto()" value="生成md5密码"/>
+</form>
+</center>
+</body>
+</html>
